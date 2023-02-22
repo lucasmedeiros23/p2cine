@@ -106,7 +106,7 @@
         font-size: 25px;
       }
 
-      .botoes {
+      .div-botoes button {
         background-color: rgb(26, 25, 25);
         padding: 8px 8px;
         color: white;
@@ -115,7 +115,7 @@
         border-radius: 5px;
         margin: 12px 12px;
       }
-      .botoes:hover {
+      .div-botoes button:hover {
         background-color: rgb(116, 20, 116);
       }
 
@@ -139,6 +139,42 @@
 
       .img-dinheiro {
         width: 45%;
+      }
+
+      .caixas-paralelas {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+        color: white;
+        margin-bottom: 150px;
+        background-color: black;
+      }
+
+      .caixas-paralelas p,
+      .caixas-paralelas h2 {
+        text-align: left;
+      }
+
+      .caixa {
+        max-width: 500px;
+        background-color: rgb(15, 15, 15);
+        height: 300px;
+        padding: 30px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+
+      .caixa:hover {
+        transition: 1s;
+        transform: scale(1.2);
+      }
+
+      .itens-caixa {
+        text-align: justify;
       }
 
       .botao-taxa {
@@ -263,13 +299,13 @@
 
       <p class="subtitulo">Se para você:</p>
 
-      <div>
-        <button class="botoes">O salário não fecha o mês</button>
-        <button class="botoes">A economia não melhora</button>
-        <button class="botoes">Conforto custa caro</button>
-        <button class="botoes">A crise não acaba</button>
-        <button class="botoes">Não dá pra ter nenhum conforto</button>
-        <button class="botoes">Só da pra fazer o mínimo</button>
+      <div class="div-botoes">
+        <button>O salário não fecha o mês</button>
+        <button>A economia não melhora</button>
+        <button>Conforto custa caro</button>
+        <button>A crise não acaba</button>
+        <button>Não dá pra ter nenhum conforto</button>
+        <button>Só da pra fazer o mínimo</button>
       </div>
 
       <div>
@@ -315,7 +351,94 @@
         src="https://i0.wp.com/p2cine.online/wp-content/uploads/2022/04/MOCKUP.png?w=898&ssl=1"
         alt="dinheiro"
       />
-      (duas caixas paralelas com hover)
+      <div class="caixas-paralelas">
+        <div class="caixa">
+          <svg
+            style="width: 40px"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                fill="#5d0956"
+                fill-rule="evenodd"
+                d="M8 0a8 8 0 100 16A8 8 0 008 0zm2.72 5.22a.75.75 0 111.06 1.06l-4.5 4.5a.75.75 0 01-1.06 0l-2-2a.75.75 0 011.06-1.06l1.47 1.47 3.97-3.97z"
+                clip-rule="evenodd"
+              ></path>
+            </g>
+          </svg>
+          <h2>
+            Ele te ajuda a organizar suas vendas, com um sistema de
+            gerenciamentos
+          </h2>
+          <svg
+            style="width: 70px"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#560458"
+            viewBox="0 0 24 24"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier"><path d="M23 13H2v-2h21v2z"></path></g>
+          </svg>
+          <p>Onde for você pode vender</p>
+          <p>Ter seu salário flexível</p>
+          <p>Ganhando bem</p>
+          <p>Se manter o mês inteiro</p>
+        </div>
+        <div class="caixa">
+          <svg
+            style="width: 40px"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                fill="#5d0956"
+                fill-rule="evenodd"
+                d="M8 0a8 8 0 100 16A8 8 0 008 0zm2.72 5.22a.75.75 0 111.06 1.06l-4.5 4.5a.75.75 0 01-1.06 0l-2-2a.75.75 0 011.06-1.06l1.47 1.47 3.97-3.97z"
+                clip-rule="evenodd"
+              ></path>
+            </g>
+          </svg>
+          <h2>Novos clientes e geração de testes</h2>
+          <svg
+            style="width: 70px"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#560458"
+            viewBox="0 0 24 24"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier"><path d="M23 13H2v-2h21v2z"></path></g>
+          </svg>
+          <p>Todos pode ser clientes</p>
+          <p>Trabalhe pelo tempo que quiser</p>
+          <p>De qualquer lugar</p>
+        </div>
+      </div>
     </section>
     <section>
       <button class="botao-taxa">QUERO O PAINEL SEM TAXA</button>
