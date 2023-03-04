@@ -18,16 +18,20 @@
         font-family: "Poppins", Sans-serif;
       }
 
+      p {
+        padding: 0 20px;
+      }
+
       .logo {
-        height: 220px;
+        height: 150px;
         margin-top: 50px;
       }
 
       .video-container {
-        padding: 100px 80px;
+        margin: 20px 0;
+        width: 80vw;
+        height: 45vw;
         background-color: #8429a7;
-        width: 500px;
-        margin: 80px 0;
       }
 
       header {
@@ -45,8 +49,9 @@
 
       h1 {
         color: #fff;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 600;
+        margin: 20px 0;
       }
 
       span {
@@ -69,12 +74,6 @@
         border: none;
       }
 
-      button:hover {
-        color: #000;
-        transform: scale(1.1);
-        transition: 1s;
-      }
-
       .subtitulo-botao {
         color: white;
         display: flex;
@@ -94,7 +93,8 @@
 
       .titulo-branco {
         color: white;
-        font-size: 32px;
+        font-size: 26px;
+        margin: 20px 0;
       }
 
       .texto-roxo {
@@ -108,12 +108,13 @@
 
       .div-botoes button {
         background-color: rgb(26, 25, 25);
-        padding: 8px 8px;
+        padding: 8px 0;
         color: white;
-        font-size: 20px;
+        font-size: 14px;
         border: #000;
         border-radius: 5px;
         margin: 12px 12px;
+        width: 300px;
       }
       .div-botoes button:hover {
         background-color: rgb(116, 20, 116);
@@ -121,7 +122,8 @@
 
       .titulo-botao {
         color: white;
-        margin-top: 100px;
+        padding: 20px;
+        margin: 20px 0;
       }
 
       .botao-roxo {
@@ -132,13 +134,16 @@
         background-image: linear-gradient(180deg, #b510d4 0%, #8429a7 100%);
         border-radius: 3px 3px 3px 3px;
         box-shadow: 0 0 15px 0 #bf00ff;
-        padding: 10px 40px 10px 40px;
+        width: 320px;
+        height: 50px;
         border: none;
         margin-top: 15px;
       }
 
       .img-dinheiro {
-        width: 45%;
+        width: auto;
+        max-width: 350px;
+        margin: 20px 0;
       }
 
       .caixas-paralelas {
@@ -149,54 +154,50 @@
         align-items: center;
         flex-wrap: wrap;
         color: white;
-        margin-bottom: 150px;
         background-color: black;
+        text-align: left;
+        margin-bottom: 40px;
       }
 
-      .caixas-paralelas p,
-      .caixas-paralelas h2 {
-        text-align: left;
+      .caixa p {
+        padding: 0;
       }
 
       .caixa {
-        max-width: 500px;
+        width: 300px;
         background-color: rgb(15, 15, 15);
-        height: 300px;
-        padding: 30px;
+        padding: 10px;
+        height: 340px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         flex-direction: column;
-      }
-
-      .caixa:hover {
-        transition: 1s;
-        transform: scale(1.2);
-      }
-
-      .itens-caixa {
-        text-align: justify;
+        border-bottom: 4px solid #b510d4;
       }
 
       .botao-taxa {
-        font-size: 20px;
+        font-size: 18px;
         color: white;
-        font-weight: 500;
+        font-weight: 300;
         background-color: transparent;
         background-image: linear-gradient(180deg, #b510d4 0%, #8429a7 100%);
         border-radius: 3px 3px 3px 3px;
         box-shadow: 0 0 15px 0 #bf00ff;
-        padding: 10px 40px 10px 40px;
+        width: 300px;
+        height: 50px;
+        margin: 20px 0;
         border: none;
       }
 
       .titulo-roxo {
         color: #bf00ff;
-        font-size: 32px;
+        font-size: 28px;
+        padding: 0 20px;
+        margin-bottom: 10px;
       }
 
       .texto-branco {
         color: white;
-        font-size: 21px;
+        font-size: 16px;
       }
     </style>
   </head>
@@ -239,13 +240,13 @@
             ></path>
           </g>
         </svg>
-        <p>Mínimo investimento inicial</p>
+        <p style="margin: 20px 0">Mínimo investimento inicial</p>
       </div>
     </header>
     <section>
       <div>
         <svg
-          style="width: 50px; padding: 40px"
+          style="width: 50px"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -314,33 +315,11 @@
           Vem pra P2 Cine!
         </h2>
 
-        <button class="botao-roxo">MAIS RENDA APESAR DA CRISE</button>
+        <button class="botao-taxa">MAIS RENDA APESAR DA CRISE</button>
       </div>
     </section>
 
     <section>
-      <svg
-        style="width: 120px; padding-top: 90px"
-        viewBox="0 0 24.00 24.00"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g
-          id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></g>
-        <g id="SVGRepo_iconCarrier">
-          <path
-            d="M5 12H12H19"
-            stroke="#9b209d"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="0.528"
-          ></path>
-        </g>
-      </svg>
       <h2 class="titulo-branco">Como fazer as vendas?</h2>
       <p class="texto-roxo">
         Receba também um painel sem taxa onde os créditos não expiram que
@@ -353,33 +332,11 @@
       />
       <div class="caixas-paralelas">
         <div class="caixa">
-          <svg
-            style="width: 40px"
-            viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                fill="#5d0956"
-                fill-rule="evenodd"
-                d="M8 0a8 8 0 100 16A8 8 0 008 0zm2.72 5.22a.75.75 0 111.06 1.06l-4.5 4.5a.75.75 0 01-1.06 0l-2-2a.75.75 0 011.06-1.06l1.47 1.47 3.97-3.97z"
-                clip-rule="evenodd"
-              ></path>
-            </g>
-          </svg>
           <h2>
             Ele te ajuda a organizar suas vendas, com um sistema de
             gerenciamentos
           </h2>
           <svg
-            style="width: 70px"
             xmlns="http://www.w3.org/2000/svg"
             fill="#560458"
             viewBox="0 0 24 24"
@@ -398,27 +355,6 @@
           <p>Se manter o mês inteiro</p>
         </div>
         <div class="caixa">
-          <svg
-            style="width: 40px"
-            viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                fill="#5d0956"
-                fill-rule="evenodd"
-                d="M8 0a8 8 0 100 16A8 8 0 008 0zm2.72 5.22a.75.75 0 111.06 1.06l-4.5 4.5a.75.75 0 01-1.06 0l-2-2a.75.75 0 011.06-1.06l1.47 1.47 3.97-3.97z"
-                clip-rule="evenodd"
-              ></path>
-            </g>
-          </svg>
           <h2>Novos clientes e geração de testes</h2>
           <svg
             style="width: 70px"
@@ -440,7 +376,17 @@
         </div>
       </div>
     </section>
-    <section>
+    <section
+      style="
+        border: 1px solid;
+        border-image: linear-gradient(90deg, #f2298200, #bf00ff, #f2298200) 1;
+        border-left: 0;
+        border-bottom: 1 px;
+        border-right: 0;
+        border-top: 0;
+        padding-bottom: 40px;
+      "
+    >
       <button class="botao-taxa">QUERO O PAINEL SEM TAXA</button>
       <svg
         style="width: 50px; padding: 40px"
@@ -466,10 +412,259 @@
         </g>
       </svg>
 
-      <h2 class="titulo-roxo">São milhares de revendedores</h2>
+      <div>
+        <h2 class="titulo-roxo">São milhares de revendedores</h2>
+        <p class="texto-branco">
+          Tem dinheiro novo todos os dias, onde chegam fazem venda.
+        </p>
+      </div>
+    </section>
+    <section
+      style="
+        border: 1px solid;
+        border-image: linear-gradient(90deg, #f2298200, #bf00ff, #f2298200) 1;
+        border-left: 0;
+        border-bottom: 1 px;
+        border-right: 0;
+        border-top: 0;
+        padding: 40px 0;
+      "
+    >
+      <h2 class="titulo-roxo">Fazer um extra com a P2Cine não é difícil</h2>
       <p class="texto-branco">
-        Tem dinheiro novo todos os dias, onde chegam fazem venda.
+        Você pode ter sempre um dinheiro a mais, com tranquilidade
       </p>
+      <img
+        decoding="async"
+        width="350px"
+        style="margin: 20px 0"
+        src="https://i0.wp.com/p2cine.online/wp-content/uploads/2022/04/00.png?fit=553%2C372&amp;ssl=1"
+        class="attachment-large size-large"
+        alt=""
+        loading="lazy"
+        srcset="
+          https://i0.wp.com/p2cine.online/wp-content/uploads/2022/04/00.png?w=553&amp;ssl=1            553w,
+          https://i0.wp.com/p2cine.online/wp-content/uploads/2022/04/00.png?resize=300%2C202&amp;ssl=1 300w
+        "
+      />
+      <button class="botao-taxa">QUERO FAZER MINHA RENDA</button>
+    </section>
+    <section
+      style="
+        border: 1px solid;
+        border-image: linear-gradient(90deg, #f2298200, #bf00ff, #f2298200) 1;
+        border-left: 0;
+        border-bottom: 1 px;
+        border-right: 0;
+        border-top: 0;
+        padding: 40px 0;
+      "
+    >
+      <h2 class="titulo-roxo">
+        Você pode ter sempre um dinheiro a mais, com tranquilidade
+      </h2>
+      <p class="texto-branco">
+        Eles escolheram melhorar suas vidas de forma simples
+      </p>
+      <div style="margin-top: 40px" class="whatsapp-slider">
+        <style>
+          .mySlides {
+            display: none;
+          }
+
+          .slideshow-container img {
+            width: 300px;
+          }
+
+          /* Slideshow container */
+          .slideshow-container {
+            width: 350px;
+            position: relative;
+            margin: auto;
+          }
+
+          .prev {
+            left: 0;
+          }
+          /* Next & previous buttons */
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: #b510d4;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+
+          /* Position the "next button" to the right */
+          .next {
+            right: 0px;
+            border-radius: 3px 0 0 3px;
+          }
+
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover,
+          .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+          /* Number text (1/3 etc) */
+          .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+
+          /* The dots/bullets/indicators */
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+
+          .active,
+          .dot:hover {
+            background-color: #717171;
+          }
+
+          /* Fading animation */
+          .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+
+          @keyframes fade {
+            from {
+              opacity: 0.4;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+              font-size: 11px;
+            }
+          }
+        </style>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img
+              src="https://i0.wp.com/p2cine.online/wp-content/uploads/2022/04/129B9EF8-D91B-4759-B7EC-E02CDBD874C8.jpeg?fit=1284%2C606&ssl=1"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://i0.wp.com/p2cine.online/wp-content/uploads/2022/04/FF37F39C-4C41-4956-A534-F3800827F507.jpeg?fit=1284%2C564&ssl=1"
+            />
+          </div>
+          <div class="mySlides fade">
+            <img
+              src="https://i0.wp.com/p2cine.online/wp-content/uploads/2022/04/C168E055-7347-4E6A-B36B-AC333844A776.jpeg?fit=1284%2C400&ssl=1"
+            />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
+
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+          }
+        </script>
+        <button class="botao-taxa">QUERO MEU DINHEIRO A MAIS</button>
+      </div>
+    </section>
+    <section style="padding: 40px 0">
+      <div
+        style="
+          width: 300px;
+          height: 400px;
+          background-color: rgba(66, 66, 66, 0.2);
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+          border-radius: 8px;
+          border: 1px solid rgba(66, 66, 66);
+        "
+      >
+        <div
+          style="
+            margin-top: 20px;
+            padding: 18px;
+            border: 1px solid rgba(66, 66, 66);
+            border-radius: 20px;
+          "
+        >
+          <p>10 a 49 créditos</p>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <h1 style="color: #b510d4; font-size: 42px">R$ 6,00</h1>
+          <p>por crédito</p>
+        </div>
+        <div>
+          <div>V</div>
+          <p>Painel sem taxa</p>
+          <p>Créditos não expiram</p>
+          <p>Painel Master</p>
+        </div>
+        <button style="width: 240px; font-size: 16px" class="botao-taxa">
+          EU QUERO ESTE PLANO
+        </button>
+      </div>
     </section>
   </body>
 </html>
