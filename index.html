@@ -203,6 +203,9 @@
       .imagem-texto {
         display: flex;
         text-align: left;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: black;
       }
 
       .icone-dinheiro {
@@ -215,13 +218,16 @@
         align-items: center;
         justify-content: center;
       }
+      .icone-dinheiro svg {
+        max-width: 50px;
+      }
 
       .lucratividade {
-        text-align: left;
+        text-align: center;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 50%;
+        justify-content: center;
+        align-items: center;
       }
 
       .titulo-franquia {
@@ -231,15 +237,17 @@
       }
 
       .icone-texto {
-        display: flex;
-        flex-wrap: wrap;
+        margin: 30px 0;
       }
-
+      .icone-texto p {
+        width: 300px;
+      }
       .beneficios-franquia {
         display: flex;
         flex-wrap: wrap;
         margin-left: 10px;
         align-items: center;
+        justify-content: center;
       }
 
       .titulo-vantagens {
@@ -883,66 +891,28 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="imagem-texto">
-        <div class="lucratividade">
-          <h2 class="titulo-franquia">Nossa Franquia</h2>
-          <p style="width: 650px; padding: 0 10px">
-            Ter o próprio negócio é o objetivo de muita gente por isso
-            oferecemos nossa franquia, você não vai precisar quebrar a cabeça
-            pensando e montando os detalhes, tudo o que precisa fazer é adquirir
-            nossa franquia e aumentar seus ganhos.
-          </p>
-
-          <div class="icone-texto">
-            <div class="beneficios-franquia">
-              <div class="icone-dinheiro">
-                <svg
-                  width="50px"
-                  version="1.1"
-                  id="_x32_"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 512 512"
-                  xml:space="preserve"
-                  fill="#000000"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <style type="text/css">
-                      .st0 {
-                        fill: #ffffff;
-                      }
-                    </style>
-                    <g>
-                      <path
-                        class="st0"
-                        d="M406.195,383.984c-8.391,15.734-19.922,28.859-34.516,39.609c-14.656,10.719-32.188,18.703-52.563,23.969 c-8.906,2.25-18.234,3.813-27.703,5.094V512h-70.828v-58.156c-20.172-1.703-39.453-4.844-57.609-9.844 c-27.719-7.594-64.016-38.25-64.016-38.25c-3.109-1.813-5.172-5-5.609-8.531c-0.453-3.563,0.766-7.156,3.313-9.688l35.484-35.5 c3.828-3.781,9.766-4.5,14.359-1.688c0,0,26.563,23.063,46.688,28.563c20.125,5.469,40.094,8.219,60.016,8.219 c25.125,0,45.891-4.438,62.359-13.313c16.5-8.938,24.719-22.75,24.719-41.625c0-13.594-4.031-24.313-12.172-32.188 c-8.109-7.813-21.828-12.734-41.188-14.891l-63.563-5.469c-37.641-3.672-66.672-14.172-87.063-31.375 c-20.453-17.266-30.609-43.453-30.609-78.453c0-19.375,3.906-36.625,11.766-51.797c7.875-15.172,18.563-27.984,32.172-38.422 c13.594-10.469,29.438-18.313,47.469-23.531c7.547-2.188,15.453-3.625,23.484-4.938V0h70.828v50.094 c16.531,1.625,32.266,4.281,46.906,8.313c24.844,6.781,50.938,27.188,50.938,27.188c3.266,1.688,5.484,4.875,6.047,8.5 c0.563,3.688-0.641,7.313-3.219,9.969l-33.281,33.781c-3.547,3.594-9.031,4.531-13.563,2.188c0,0-19.703-14.031-36.734-18.469 c-17.016-4.438-34.891-6.688-53.719-6.688c-24.609,0-42.797,4.719-54.531,14.109c-11.781,9.453-17.625,21.734-17.625,36.875 c0,13.641,4.109,24.078,12.531,31.359c8.359,7.344,22.469,12.109,42.359,14.125l55.703,4.75 c41.297,3.656,72.563,14.625,93.734,32.922c21.203,18.328,31.781,45.016,31.781,80.016 C418.742,350.016,414.554,368.281,406.195,383.984z"
-                      ></path>
-                    </g>
-                  </g>
-                </svg>
-              </div>
-              <div>
-                <h2 class="titulo-vantagens">Lucratividade</h2>
-                <p>
-                  Tenha rentabilidade escalável, expanda seus ganhos e seus
-                  faturamentos o quanto quiser.
-                </p>
-              </div>
-            </div>
+    <!-- <section> -->
+    <div class="imagem-texto">
+      <div class="lucratividade">
+        <h2 class="titulo-franquia">Nossa Franquia</h2>
+        <p>
+          Ter o próprio negócio é o objetivo de muita gente por isso oferecemos
+          nossa franquia, você não vai precisar quebrar a cabeça pensando e
+          montando os detalhes, tudo o que precisa fazer é adquirir nossa
+          franquia e aumentar seus ganhos.
+        </p>
+        <!-- aqui -->
+        <div class="icone-texto">
+          <div class="beneficios-franquia">
             <div class="icone-dinheiro">
               <svg
                 width="50px"
-                viewBox="0 0 24 24"
                 version="1.1"
+                id="_x32_"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
                 fill="#000000"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -952,45 +922,31 @@
                   stroke-linejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
-                  <title>service_fill</title>
-                  <g
-                    id="页面-1"
-                    stroke="none"
-                    stroke-width="1"
-                    fill="none"
-                    fill-rule="evenodd"
-                  >
-                    <g
-                      id="Media"
-                      transform="translate(-1536.000000, -48.000000)"
-                      fill-rule="nonzero"
-                    >
-                      <g
-                        id="service_fill"
-                        transform="translate(1536.000000, 48.000000)"
-                      >
-                        <path
-                          d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
-                          id="MingCute"
-                          fill-rule="nonzero"
-                        ></path>
-                        <path
-                          d="M5,9 C5,5.13401 8.13401,2 12,2 C15.866,2 19,5.13401 19,9 L19,10.0354 C20.6961,10.2781 22,11.7368 22,13.5 L22,13.75 C22,15.5252 20.469,17.0814 18.6678,16.9981 C17.9274,19.118 16.0464,20.5467 14.0149,20.9093 C13.5456,21.0808 12.9889,21 12.5,21 C11.6716,21 11,20.3284 11,19.5 C11,18.6716 11.6716,18 12.5,18 C13.2934,18 14.1712,17.8853 14.7065,18.6086 C16.0035,17.9919 17,16.6885 17,15 L17,9 C17,6.23858 14.7614,4 12,4 C9.23858,4 7,6.23858 7,9 L7,15.25 C7,16.2165 6.2165,17 5.25,17 C3.45507,17 2,15.5449 2,13.75 L2,13.5 C2,11.7368 3.30385,10.2781 5,10.0354 L5,9 Z"
-                          id="路径"
-                          fill="#ffffff"
-                        ></path>
-                      </g>
-                    </g>
+                  <style type="text/css">
+                    .st0 {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M406.195,383.984c-8.391,15.734-19.922,28.859-34.516,39.609c-14.656,10.719-32.188,18.703-52.563,23.969 c-8.906,2.25-18.234,3.813-27.703,5.094V512h-70.828v-58.156c-20.172-1.703-39.453-4.844-57.609-9.844 c-27.719-7.594-64.016-38.25-64.016-38.25c-3.109-1.813-5.172-5-5.609-8.531c-0.453-3.563,0.766-7.156,3.313-9.688l35.484-35.5 c3.828-3.781,9.766-4.5,14.359-1.688c0,0,26.563,23.063,46.688,28.563c20.125,5.469,40.094,8.219,60.016,8.219 c25.125,0,45.891-4.438,62.359-13.313c16.5-8.938,24.719-22.75,24.719-41.625c0-13.594-4.031-24.313-12.172-32.188 c-8.109-7.813-21.828-12.734-41.188-14.891l-63.563-5.469c-37.641-3.672-66.672-14.172-87.063-31.375 c-20.453-17.266-30.609-43.453-30.609-78.453c0-19.375,3.906-36.625,11.766-51.797c7.875-15.172,18.563-27.984,32.172-38.422 c13.594-10.469,29.438-18.313,47.469-23.531c7.547-2.188,15.453-3.625,23.484-4.938V0h70.828v50.094 c16.531,1.625,32.266,4.281,46.906,8.313c24.844,6.781,50.938,27.188,50.938,27.188c3.266,1.688,5.484,4.875,6.047,8.5 c0.563,3.688-0.641,7.313-3.219,9.969l-33.281,33.781c-3.547,3.594-9.031,4.531-13.563,2.188c0,0-19.703-14.031-36.734-18.469 c-17.016-4.438-34.891-6.688-53.719-6.688c-24.609,0-42.797,4.719-54.531,14.109c-11.781,9.453-17.625,21.734-17.625,36.875 c0,13.641,4.109,24.078,12.531,31.359c8.359,7.344,22.469,12.109,42.359,14.125l55.703,4.75 c41.297,3.656,72.563,14.625,93.734,32.922c21.203,18.328,31.781,45.016,31.781,80.016 C418.742,350.016,414.554,368.281,406.195,383.984z"
+                    ></path>
                   </g>
                 </g>
               </svg>
             </div>
-
-            <h2 class="titulo-vantagens">Suporte</h2>
-            <p>
-              Sabemos que podem surgir dúvidas no caminho, por isso temos nosso
-              suporte para te auxiliar 😉
-            </p>
+            <div>
+              <h2 class="titulo-vantagens">Lucratividade</h2>
+              <p>
+                Tenha rentabilidade escalável, expanda seus ganhos e seus
+                faturamentos o quanto quiser.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="icone-texto">
+          <div class="beneficios-franquia">
             <div class="icone-dinheiro">
               <svg
                 height="50px"
@@ -1028,34 +984,75 @@
                 </g>
               </svg>
             </div>
-            <h2 class="titulo-vantagens">Agilidade</h2>
-            <p>
-              Temos um modelo de negócio rápido e prático então abrimos sua
-              franquia em pouco tempo.
-            </p>
-            <button class="botao-taxa">ENTRE EM CONTATO</button>
+            <div>
+              <h2 class="titulo-vantagens">Agilidade</h2>
+              <p>
+                Temos um modelo de negócio rápido e prático então abrimos sua
+                franquia em pouco tempo.
+              </p>
+            </div>
           </div>
         </div>
-
-        <div>
-          <img
-            style="
-              max-width: auto;
-              height: auto;
-              border: none;
-              border-radius: 80px 20px;
-            "
-            src="https://i0.wp.com/p2cine.online/wp-content/uploads/2022/11/BG-SECAO.jpg?resize=1024%2C742&ssl=1"
-          />
+        <div class="icone-texto">
+          <div class="beneficios-franquia">
+            <div class="icone-dinheiro">
+              <svg
+                viewBox="0 0 24 24"
+                id="_24x24_On_Light_Support"
+                data-name="24x24/On Light/Support"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <rect id="view-box" width="24" height="24" fill="none"></rect>
+                  <path
+                    id="Shape"
+                    d="M8,17.751a2.749,2.749,0,0,1,5.127-1.382C15.217,15.447,16,14,16,11.25v-3c0-3.992-2.251-6.75-5.75-6.75S4.5,4.259,4.5,8.25v3.5a.751.751,0,0,1-.75.75h-1A2.753,2.753,0,0,1,0,9.751v-1A2.754,2.754,0,0,1,2.75,6h.478c.757-3.571,3.348-6,7.022-6s6.264,2.429,7.021,6h.478a2.754,2.754,0,0,1,2.75,2.75v1a2.753,2.753,0,0,1-2.75,2.75H17.44A5.85,5.85,0,0,1,13.5,17.84,2.75,2.75,0,0,1,8,17.751Zm1.5,0a1.25,1.25,0,1,0,1.25-1.25A1.251,1.251,0,0,0,9.5,17.751Zm8-6.75h.249A1.251,1.251,0,0,0,19,9.751v-1A1.251,1.251,0,0,0,17.75,7.5H17.5Zm-16-2.25v1A1.251,1.251,0,0,0,2.75,11H3V7.5H2.75A1.251,1.251,0,0,0,1.5,8.751Z"
+                    transform="translate(1.75 2.25)"
+                    fill="#ffffff"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h2 class="titulo-vantagens">Suporte</h2>
+              <p>
+                Sabemos que podem surgir dúvidas no caminho, por isso temos
+                nosso suporte para te auxiliar 😉
+              </p>
+            </div>
+          </div>
         </div>
+        <!-- termina aqui -->
       </div>
-    </section>
-    <section style="padding-bottom: 90px">
+    </div>
+
+    <!-- </section> -->
+    <section style="padding: 90px 0">
+      <div>
+        <img
+          style="
+            width: 60vw;
+            min-width: 300px;
+            max-width: 500px;
+            border: none;
+            border-radius: 80px 20px;
+          "
+          src="https://i0.wp.com/p2cine.online/wp-content/uploads/2022/11/BG-SECAO.jpg?resize=1024%2C742&ssl=1"
+        />
+      </div>
       <h2
         style="
           color: #bf00ff;
           text-shadow: 0 0 23px rgb(191 0 255 / 49%);
           font-size: 50px;
+          margin: 40px 0;
         "
       >
         A partir de agora a decisão é sua!
