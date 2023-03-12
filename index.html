@@ -83,7 +83,12 @@
       }
 
       section {
-        background-color: #000;
+        background: rgb(34, 0, 36);
+        background: radial-gradient(
+          circle,
+          rgba(34, 0, 36, 1) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
         display: flex;
         align-items: center;
         justify-content: center;
@@ -154,9 +159,7 @@
         align-items: center;
         flex-wrap: wrap;
         color: white;
-        background-color: black;
         text-align: left;
-        margin-bottom: 40px;
       }
 
       .caixa p {
@@ -190,7 +193,7 @@
 
       .titulo-roxo {
         color: #bf00ff;
-        font-size: 28px;
+        font-size: 36px;
         padding: 0 20px;
         margin-bottom: 10px;
       }
@@ -228,6 +231,12 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        background: rgb(34, 0, 36);
+        background: radial-gradient(
+          circle,
+          rgba(34, 0, 36, 1) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
       }
 
       .titulo-franquia {
@@ -269,7 +278,44 @@
         Mostre <span>sua P2 turbo, o que ela faz</span> e eles vão querer uma
         indicação.
       </p>
-      <div class="video-container">video</div>
+      <div class="video-container">
+        <div
+          id="vid_640beacae690640009c2c49d"
+          style="position: relative; width: 100%; padding: 56.25% 0 0"
+        >
+          <img
+            id="thumb_640beacae690640009c2c49d"
+            src="https://images.converteai.net/cbce0636-e174-432e-a91c-dca3563af75c/players/640beacae690640009c2c49d/thumbnail.jpg"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+            "
+          />
+          <div
+            id="backdrop_640beacae690640009c2c49d"
+            style="
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              -webkit-backdrop-filter: blur(5px);
+              backdrop-filter: blur(5px);
+            "
+          ></div>
+        </div>
+        <script type="text/javascript" id="scr_640beacae690640009c2c49d">
+          var s = document.createElement("script");
+          (s.src =
+            "https://scripts.converteai.net/cbce0636-e174-432e-a91c-dca3563af75c/players/640beacae690640009c2c49d/player.js"),
+            (s.async = !0),
+            document.head.appendChild(s);
+        </script>
+      </div>
       <button class="botao-header">QUERO GANHAR MAIS</button>
       <div class="subtitulo-botao">
         <svg
@@ -438,7 +484,7 @@
         border-bottom: 1 px;
         border-right: 0;
         border-top: 0;
-        padding-bottom: 40px;
+        padding: 40px 0;
       "
     >
       <button class="botao-taxa">QUERO O PAINEL SEM TAXA</button>
